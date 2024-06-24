@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="JobPortal.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table border="1" width="100%">
+                <tr style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 75px; font-weight: bold; font-style: normal; font-variant: normal; text-transform: none; color: #003366; background-color: #00CCFF; text-align: center">
+                    <td width="10%" style="font-family: 'FRanklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Logo.png" Height="125px" Width="150px" ImageAlign="AbsMiddle" />
+                    </td>
+                    <td colspan="6">
+                        <asp:Label ID="Label1" runat="server" Text="CARRIERHOUSE"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'Bahnschrift SemiBold'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #003366; text-align: center; background-color: #00CCFF;">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/HHome.aspx">Home</asp:HyperLink>
+                    </td>
+                    <td style="font-family: 'Bahnschrift SemiBold'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #003366; text-align: center; background-color: #00CCFF;">
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/JLogin.aspx">Jobs</asp:HyperLink>
+                    </td>
+                    <td style="font-family: 'Bahnschrift SemiBold'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #003366; text-align: center; background-color: #00CCFF;">
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/CLogin.aspx">Companies</asp:HyperLink>
+                    </td>
+                    <td style="font-family: 'Bahnschrift SemiBold'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #003366; text-align: center; background-color: #00CCFF;">
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/ALogin.aspx">Admin</asp:HyperLink>
+                    </td>
+                    <td style="font-family: 'Bahnschrift SemiBold'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #003366; text-align: center; background-color: #00CCFF;">
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/HFeedback.aspx">Feed Back</asp:HyperLink>
+                    </td>
+                     <td style="font-family: 'Bahnschrift SemiBold'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #003366; text-align: center; background-color: #00CCFF;">
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/HContact.aspx">Contact Us</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr style="font-family: 'Bahnschrift SemiBold'; font-size: large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #003366; text-align: center; background-color: #00CCFF">
+                    <td colspan="6">
+                        <asp:Label ID="Label2" runat="server" Text="Copyright &copy; 2024 Carrierhouse Pvt Ltd. All Rights Reserved."></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="JobPortal.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <table border="1" width="100%">
+                <tr>
+                    <td width="11%" style="font-family: 'Microsoft New Tai Lue'; font-size: 80px; font-weight: bold; font-style: normal; font-variant: normal; text-transform: none; color: #663300; background-color: #FFCC00; text-align: center; vertical-align: middle;">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Logo.png" Height="150px" Width="175px" ImageAlign="AbsMiddle" />
+                    </td>
+                    <td colspan="5" style="font-family: 'Microsoft New Tai Lue'; font-size: 80px; font-weight: bold; font-style: normal; font-variant: normal; text-transform: none; color: #663300; background-color: #FFCC00; text-align: center; vertical-align: middle;">
+                        <asp:Label ID="Label1" runat="server" Text="CARRIERHOUSE"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'MS UI Gothic'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #663300; text-align: center; background-color: #FFCC00; line-height: 40px;">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AMHome.aspx">Home</asp:HyperLink>                                 
+                    </td>
+                    <td rowspan="4">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'MS UI Gothic'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #663300; text-align: center; background-color: #FFCC00; line-height: 40px">
+                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AMJobSeekerReport.aspx">JobSeeker Report</asp:HyperLink>                       
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'MS UI Gothic'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #663300; text-align: center; background-color: #FFCC00; line-height: 40px">
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AMCompanyReport.aspx">Company Report</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'MS UI Gothic'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #663300; text-align: center; background-color: #FFCC00; line-height: 40px">
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/AMFeedbackReport.aspx">Feedback Report</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'MS UI Gothic'; font-size: x-large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #663300; text-align: center; background-color: #FFCC00; line-height: 40px">
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/HHome.aspx">Logout</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr style="font-family: 'MS UI Gothic'; font-size: x-large; font-weight: bold; font-style: normal; font-variant: normal; text-transform: none; color: #663300; text-align: center; background-color: #FFCC00">
+                    <td colspan="5">
+                        <asp:Label ID="Label2" runat="server" Text="Copyright &copy; 2024 Carrierhouse Pvt Ltd. All Rights Reserved."></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
